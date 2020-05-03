@@ -1,0 +1,131 @@
+body {
+    background: white;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    background: white;
+}
+
+/* div ul li a {
+    color: #C51426 !important;
+} */
+
+.navbar a:hover {
+    color: #C51426;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: inherit;
+    font-weight: initial;
+    background: #F2E5DF;
+    border-bottom: solid 1px #c51426;
+}
+
+.carousel-item img {
+    opacity: 1;
+}
+
+.carousel-caption {
+    color: #F2E5DF;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.faac-section {
+    height: 300px;
+    background: #F2E5DF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.faac-section .humaaan-image {
+    width: 20%;
+}
+
+.faac-section .right {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.content-heading-format {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.content-paragraph-format {
+    color: #C51426;
+    font-style: italic;
+}
+
+.content-button {
+    border-radius: 10px;
+    padding: 5px 25px;
+    background: #C51426;
+    color: #F9E4E6;
+    margin-right: 20px;
+    outline: none !important;
+}
+
+.content-button:hover{
+    background-color: black;
+}
+
+.ratings-section {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+footer {
+    height: 250px;    
+    background: #C51426;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 50px 0 50px;
+}
+
+footer .top-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .top-section h4 {
+    font-weight: bold;
+}
+
+.copyright-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright-section .copyright {
+    font-size: 0.8rem;
+}
+
+.social-media-icons span{
+    display: flex;
+}
+
+.social-media-icons span img {
+    max-width: 20px;
+}
+
+footer .top-section a:hover {
+    color: rgb(202, 187, 187);
+}
