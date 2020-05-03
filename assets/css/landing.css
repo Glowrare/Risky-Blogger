@@ -6,7 +6,7 @@ body {
 
 a {
     text-decoration: none;
-    color: initial;
+    color: inherit;
 }
 
 nav {
@@ -17,6 +17,8 @@ nav {
 /* div ul li a {
     color: #C51426 !important;
 } */
+
+
 
 .carousel-item img {
     opacity: 0.4;
@@ -65,7 +67,11 @@ nav {
     background: #C51426;
     color: #F9E4E6;
     margin-right: 20px;
-    outline: none;
+    outline: none !important;
+}
+
+.content-button:hover{
+    background-color: black;
 }
 
 .ratings-section {
@@ -77,7 +83,36 @@ nav {
 }
 
 footer {
-    height: 350px;
-    display: flex;
+    height: 250px;    
     background: #C51426;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 50px 0 50px;
+}
+
+footer .top-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .top-section h4 {
+    font-weight: bold;
+}
+
+.copyright-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright-section .copyright {
+    font-size: 0.8rem;
+}
+
+.social-media-icons span{
+    display: flex;
+}
+
+.social-media-icons span img {
+    max-width: 20px;
 }
