@@ -1,0 +1,91 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #F9E4E6;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-logo {
+    position: absolute;
+    height: 100px;
+    width: 400px;
+    left: 50px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo-image img {
+    width: auto;
+    height: 70px;
+}
+
+.logo-text h1 {
+    font-size: 2rem;
+}
+
+.page-content {
+    height: 500px;
+    width: 95%;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.page-content .amie-and-cali {
+    background: url(../img/log-in-page/amie-and-cali.png);
+    background-size: cover;
+    width: 40%;
+    height: inherit;
+
+}
+
+.page-content .form-page {
+    background: #C51426;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #302d2d, #C51426);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #302d2d, #C51426); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.page-content .form-page form {
+    color: white;
+    line-height: 3rem;
+}
+
+.page-content .form-page form input {
+    border-color: #F9E4E6;
+    box-shadow: none;
+    color: black;
+}
+
+.page-content .form-page form button {
+    background: #F9E4E6;
+    width: 100%;
+    border-radius: 0.25rem;
+    border: none;
+    padding: 5px;
+    outline: none;
+    font-weight: bold;
+}
+
+.page-content .form-page form a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.page-content .form-page form button:hover {
+    background: #000000;
+    color: white;
+
+
+}
