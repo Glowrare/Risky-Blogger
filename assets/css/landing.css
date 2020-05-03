@@ -11,21 +11,30 @@ a {
 
 nav {
     background: white;
-    /* border-bottom: solid 1px black; */
 }
 
 /* div ul li a {
     color: #C51426 !important;
 } */
 
+.navbar a:hover {
+    color: #C51426;
+    font-weight: bold;
+}
 
+.navbar ul li a:hover {
+    color: inherit;
+    font-weight: initial;
+    background: #F2E5DF;
+    border-bottom: solid 1px #c51426;
+}
 
 .carousel-item img {
-    opacity: 0.4;
+    opacity: 1;
 }
 
 .carousel-caption {
-    color: inherit;
+    color: #F2E5DF;
     font-family: inherit;
     font-size: 20px;
 }
@@ -115,4 +124,8 @@ footer .top-section h4 {
 
 .social-media-icons span img {
     max-width: 20px;
+}
+
+footer .top-section a:hover {
+    color: rgb(202, 187, 187);
 }
