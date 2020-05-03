@@ -10,7 +10,7 @@ a {
 }
 
 nav {
-    background: whitesmoke;
+    background: white;
     /* border-bottom: solid 1px black; */
 }
 
@@ -33,6 +33,51 @@ nav {
     font-weight: bold;
 }
 
-.about-faac-section {
-    
+.faac-section {
+    height: 300px;
+    background: #F2E5DF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.faac-section .humaaan-image {
+    width: 20%;
+}
+
+.faac-section .right {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.content-heading-format {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.content-paragraph-format {
+    color: #C51426;
+    font-style: italic;
+}
+
+.content-button {
+    border-radius: 10px;
+    padding: 5px 25px;
+    background: #C51426;
+    color: #F9E4E6;
+    margin-right: 20px;
+    outline: none;
+}
+
+.ratings-section {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+footer {
+    height: 350px;
+    display: flex;
+    background: #C51426;
 }
