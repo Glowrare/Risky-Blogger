@@ -1,0 +1,38 @@
+body {
+    background: white;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+nav {
+    background: whitesmoke;
+    /* border-bottom: solid 1px black; */
+}
+
+/* div ul li a {
+    color: #C51426 !important;
+} */
+
+.carousel-item img {
+    opacity: 0.4;
+}
+
+.carousel-caption {
+    color: inherit;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.about-faac-section {
+    
+}
