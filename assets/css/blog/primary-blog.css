@@ -1,0 +1,62 @@
+body {
+    background: white;
+    box-sizing: border-box;
+}
+
+.blog-section {
+    min-height: 100vh;
+}
+
+.blog-title {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .blog-title {
+    height: 100px;
+    display: block;
+    position: relative;
+  }
+  
+.blog-title::after {
+    content: "";
+    background: url(../../img/blog_images/graphoc.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  } */
+
+.title-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-info {
+    width: 60%;
+}
+
+.share-links img{
+    max-width: 20px;
+}
+
+.post-image {
+    height: 100px;
+    background: url(../../img/blog_images/graphoc.jpg);
+    background-size: cover;
+}
+
+.blog-content {
+    text-align: justify;
+}
+
+.blog-content blockquote {
+    font-style: italic;
+    border-left: solid black 5px;
+    color: #C51426;
+    padding-left: 5px;
+}
