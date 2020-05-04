@@ -5,6 +5,7 @@ body {
 
 .blog-section {
     min-height: 100vh;
+    margin-bottom: 30px;
 }
 
 .blog-title {
@@ -44,13 +45,58 @@ body {
     max-width: 20px;
 }
 
-.post-image {
+.blog-welcome-title h3{
+    text-transform: uppercase;
+}
+
+.blog-welcome-title h3:hover {
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+}
+
+.blog-image {
     height: 100px;
     background: url(../../img/blog_images/graphoc.jpg);
     background-size: cover;
 }
 
-.blog-content {
+.blog-preview {
+    padding-top: 30px;
+}
+
+.blog-preview > p {
+    font-style: italic;
+}
+
+.blog-preview a {
+    text-decoration: none;
+
+}
+
+.blog-preview a:hover {
+    color: #C51426;
+}
+
+.btn {
+    font-weight: bold;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+  
+  .btn-danger {
+    background-color: #C51426;
+  }
+
+.btn-danger:hover {
+    color: black;
+    background-color: #F9E4E6;
+    border-color: #C51426;
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.9);
+} 
+
+
+/* .blog-content {
     text-align: justify;
 }
 
@@ -59,4 +105,4 @@ body {
     border-left: solid black 5px;
     color: #C51426;
     padding-left: 5px;
-}
+} */
