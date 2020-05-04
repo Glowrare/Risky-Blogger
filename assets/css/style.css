@@ -37,11 +37,19 @@ nav {
     color: #F2E5DF;
     font-family: inherit;
     font-size: 20px;
+    text-align: left;
+    top: 20px;
+    width: 40%;
 }
 
 .carousel-caption h5 {
     font-size: 2rem;
     font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    font-style: italic;
 }
 
 .faac-section {
