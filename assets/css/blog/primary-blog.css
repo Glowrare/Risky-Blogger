@@ -85,13 +85,12 @@ body {
 }
   
   .btn-danger {
-    background-color: #C51426;
+    background-color: #C51426 !important;
   }
 
 .btn-danger:hover {
-    color: black;
     background-color: #F9E4E6;
-    border-color: #C51426;
+    border-color: rgb(148, 126, 128);
     box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.9);
 } 
 
