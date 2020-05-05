@@ -1,0 +1,8 @@
+.title-style {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-buttons > button {
+    border-radius: 0;
+}
