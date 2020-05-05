@@ -2,12 +2,17 @@
     min-height: 70vh;
 }
 
+div > .col-md-10 > .header {
+    margin-bottom: 30px;
+}
+
 .row {
     margin-bottom: 30px;
 }
 
 .row > .col-md-2 > .card {
     border-radius: 0;
+    height: 120px;
     box-shadow: 3px 5px 8px 1px rgba(202, 141, 141, 0.5);
 }
 
@@ -16,4 +21,8 @@
     color: white;
     text-size-adjust: 1.2rem;
     box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.9);
+}
+
+.card >a:hover {
+    color: white !important;
 }
