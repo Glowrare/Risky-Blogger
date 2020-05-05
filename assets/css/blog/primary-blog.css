@@ -5,6 +5,7 @@ body {
 
 .blog-section {
     min-height: 100vh;
+    margin-bottom: 30px;
 }
 
 .blog-title {
@@ -44,19 +45,79 @@ body {
     max-width: 20px;
 }
 
-.post-image {
+.blog-welcome-title h3{
+    text-transform: uppercase;
+}
+
+.blog-welcome-title h3:hover {
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+}
+
+.blog-image {
     height: 100px;
     background: url(../../img/blog_images/graphoc.jpg);
     background-size: cover;
 }
 
-.blog-content {
-    text-align: justify;
+.blog-preview {
+    padding-top: 30px;
 }
 
-.blog-content blockquote {
+.blog-preview > p {
     font-style: italic;
-    border-left: solid black 5px;
+}
+
+.blog-preview a {
+    text-decoration: none;
+
+}
+
+.blog-preview a:hover {
     color: #C51426;
-    padding-left: 5px;
+}
+
+.btn {
+    font-weight: bold;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+  
+  .btn-danger {
+    background-color: #C51426 !important;
+  }
+
+.btn-danger:hover {
+    background-color: #F9E4E6;
+    border-color: rgb(148, 126, 128);
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.9);
+} 
+
+p .card-text a:hover {
+    color: #C51426;;
+}
+
+.position-fixed {
+    right:0;
+}
+
+.featured-post {
+    margin-top: 30px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.featured-post h6 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.featured-post > a {
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+.featured-post hr {
+    margin: 0.5rem;
 }
