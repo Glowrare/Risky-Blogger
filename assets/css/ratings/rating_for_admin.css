@@ -1,0 +1,9 @@
+.admin-functions {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.btn-sm{
+    margin-right: 20px;
+}
