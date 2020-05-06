@@ -137,3 +137,78 @@ footer .top-section h4 {
 footer .top-section a:hover {
     color: rgb(202, 187, 187);
 }
+
+@media screen and (max-width: 640px) {
+    .carousel-inner {
+        background: black;
+    }
+
+    .carousel-item img {
+        visibility: hidden;
+    }
+
+    .carousel-caption {
+        visibility: visible;
+        display: block !important;
+        text-align: left;
+        top: 20px;
+        width: 80%;       
+    }
+
+    .carousel-caption h5 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .carousel-caption p {
+        font-size: .75rem;
+        font-style: italic;
+    }
+
+    .content-button {
+        border-radius: 5px;
+        padding: 5px;
+        margin-right: 20px;
+        outline: none !important;
+        font-size: .75rem;
+    }
+
+    .faac-section {
+        height: 150px;
+    }
+
+    .faac-section .humaaan-image{
+        display: none;
+    }
+
+    .content-heading-format {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    .content-paragraph-format {
+        font-size: .75rem;
+        color: #C51426;
+        font-style: italic;
+    }
+
+    .ratings-section {
+        height: 150px;
+    }
+
+    .ratings-cover-image {
+        display: none;
+    }
+
+    footer {
+        font-size: .8rem !important;
+    }
+    footer .page-logo {
+        display: none;
+
+    }
+
+    footer .top-section h4 {
+        font-size: 0.9rem;
+    }
+}
