@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +15,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" ></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="https://kit.fontawesome.com/5183653b0f.js" crossorigin="anonymous"></script>
     <title>Risky Blogger - Ratings</title>
 </head>
+
 <body>
     <nav class="mb-1 navbar navbar-light navbar-expand-lg sticky-top">
         <a class="navbar-brand" href="../../index.html"> <img src="../../assets/img/general-images/risky-blogger.png" width="auto" height="30" class="d-inline-block align-top" alt=""> Risky Blogger</a>
@@ -54,162 +56,157 @@
     </nav>
     <div class="container">
         <h4>Report for Customers' ratings </h4>
-        
+
         <div class="block my-4">
             <div class="d-flex justify-content-center">
-              <p class="h5 text-primary createShowP">0 row selected</p>
+                <p class="h5 text-primary createShowP">0 row selected</p>
             </div>
         </div>
         <div class="admin-functions">
-          <div class="row d-flex justify-content-center modalWrapper">
-            <div class="modal fade addNewInputs" id="modalAdd" tabindex="-1" role="dialog" aria-labelledby="modalAdd"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header text-center">
-                    <h4 class="modal-title w-100 font-weight-bold text-primary ml-5">Add new entry</h4>
-                    <button type="button" class="close text-primary" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body mx-3">
-                    <div class="md-form mb-5">
-                      <input type="text" id="inputName" class="form-control validate">
-                      <label data-error="wrong" data-success="right" for="inputName">Customer's Name</label>
-                    </div>
-        
-                    <div class="md-form mb-5">
-                      <input type="text" id="inputBase" class="form-control validate">
-                      <label data-error="wrong" data-success="right" for="inputPosition">Base</label>
-                    </div>
-        
-                    <div class="md-form mb-5">
-                      <input type="text" id="inputBranch" class="form-control validate">
-                      <label data-error="wrong" data-success="right" for="inputOfficeInput">Branch</label>
-                    </div>
-        
-                    <div class="md-form mb-5">
-                      <input type="text" id="inputRM" class="form-control validate">
-                      <label data-error="wrong" data-success="right" for="inputAge">Relationship Officer</label>
-                    </div>
-        
-                    <div class="md-form mb-5">
-                      <input type="text" id="inputDirectorate" class="form-control validate">
-                      <label data-error="wrong" data-success="right" for="inputSalary">Directorate</label>
-                    </div>
+            <div class="row d-flex justify-content-center modalWrapper">
+                <div class="modal fade addNewInputs" id="modalAdd" tabindex="-1" role="dialog" aria-labelledby="modalAdd" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header text-center">
+                                <h4 class="modal-title w-100 font-weight-bold text-primary ml-5">Add new entry</h4>
+                                <button type="button" class="close text-primary" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body mx-3">
+                                <div class="md-form mb-5">
+                                    <input type="text" id="inputName" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="inputName">Customer's Name</label>
+                                </div>
 
-                    <div class="md-form mb-5">
-                        <input type="text" id="inputRating" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="inputSalary">Rating</label>
-                      </div>
-        
-                  </div>
-                  <div class="modal-footer d-flex justify-content-center buttonAddFormWrapper">
-                    <button class="btn btn-outline-primary btn-block buttonAdd" data-dismiss="modal">Add changes
-                    </button>
-                    <button class="btn btn-outline-danger btn-block buttonAdd" data-dismiss="modal">Decline
-                        <i class="fas fa-paper-plane-o ml-1"></i>
-                      </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-        
-            <div class="text-center">
-              <a href="" class="btn btn-info btn-rounded btn-sm" data-toggle="modal" data-target="#modalAdd">Approve<i
-                  class="fas fa-plus-square ml-1"></i></a>
-            </div>
-        
-            <div class="modal fade modalEditClass" id="modalEdit" tabindex="-1" role="dialog" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header text-center">
-                    <h4 class="modal-title w-100 font-weight-bold text-secondary ml-5">Edit form</h4>
-                    <button type="button" class="close text-secondary" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body mx-3">
-                    <div class="md-form mb-5">
-                        <input type="text" id="inputName" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="inputName">Customer's Name</label>
-                      </div>
-          
-                      <div class="md-form mb-5">
-                        <input type="text" id="inputBase" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="inputPosition">Base</label>
-                      </div>
-          
-                      <div class="md-form mb-5">
-                        <input type="text" id="inputBranch" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="inputOfficeInput">Branch</label>
-                      </div>
-          
-                      <div class="md-form mb-5">
-                        <input type="text" id="inputRM" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="inputAge">Relationship Officer</label>
-                      </div>
-          
-                      <div class="md-form mb-5">
-                        <input type="text" id="inputDirectorate" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="inputSalary">Directorate</label>
-                      </div>
-  
-                      <div class="md-form mb-5">
-                          <input type="text" id="inputRating" class="form-control validate">
-                          <label data-error="wrong" data-success="right" for="inputSalary">Rating</label>
+                                <div class="md-form mb-5">
+                                    <input type="text" id="inputBase" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="inputPosition">Base</label>
+                                </div>
+
+                                <div class="md-form mb-5">
+                                    <input type="text" id="inputBranch" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="inputOfficeInput">Branch</label>
+                                </div>
+
+                                <div class="md-form mb-5">
+                                    <input type="text" id="inputRM" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="inputAge">Relationship Officer</label>
+                                </div>
+
+                                <div class="md-form mb-5">
+                                    <input type="text" id="inputDirectorate" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="inputSalary">Directorate</label>
+                                </div>
+
+                                <div class="md-form mb-5">
+                                    <input type="text" id="inputRating" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="inputSalary">Rating</label>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center buttonAddFormWrapper">
+                                <button class="btn btn-outline-primary btn-block buttonAdd" data-dismiss="modal">Add changes
+                                </button>
+                                <button class="btn btn-outline-danger btn-block buttonAdd" data-dismiss="modal">Decline
+                                    <i class="fas fa-paper-plane-o ml-1"></i>
+                                </button>
+                            </div>
                         </div>
-                        <div class="modal-footer d-flex justify-content-center buttonAddFormWrapper">
-                            <button class="btn btn-outline-primary btn-block buttonAdd" data-dismiss="modal">Update
-                            </button>
-                            <button class="btn btn-outline-danger btn-block buttonAdd" data-dismiss="modal">Cancel
-                                <i class="fas fa-paper-plane-o ml-1"></i>
-                              </button>
-                          </div>
-          
                     </div>
-        
-        
-                  </div>
-                  <div class="modal-footer d-flex justify-content-center editInsideWrapper">
-                    <button class="btn btn-outline-secondary btn-block editInside" data-dismiss="modal">Update
-                      data
-                    </button>
-                  </div>
                 </div>
-              </div>
+
+                <div class="text-center">
+                    <a href="" class="btn btn-info btn-rounded btn-sm" data-toggle="modal" data-target="#modalAdd">Approve<i
+                  class="fas fa-plus-square ml-1"></i></a>
+                </div>
+
+                <div class="modal fade modalEditClass" id="modalEdit" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header text-center">
+                                <h4 class="modal-title w-100 font-weight-bold text-secondary ml-5">Edit form</h4>
+                                <button type="button" class="close text-secondary" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body mx-3">
+                                <div class="md-form mb-5">
+                                    <input type="text" id="inputName" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="inputName">Customer's Name</label>
+                                </div>
+
+                                <div class="md-form mb-5">
+                                    <input type="text" id="inputBase" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="inputPosition">Base</label>
+                                </div>
+
+                                <div class="md-form mb-5">
+                                    <input type="text" id="inputBranch" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="inputOfficeInput">Branch</label>
+                                </div>
+
+                                <div class="md-form mb-5">
+                                    <input type="text" id="inputRM" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="inputAge">Relationship Officer</label>
+                                </div>
+
+                                <div class="md-form mb-5">
+                                    <input type="text" id="inputDirectorate" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="inputSalary">Directorate</label>
+                                </div>
+
+                                <div class="md-form mb-5">
+                                    <input type="text" id="inputRating" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="inputSalary">Rating</label>
+                                </div>
+                                <div class="modal-footer d-flex justify-content-center buttonAddFormWrapper">
+                                    <button class="btn btn-outline-primary btn-block buttonAdd" data-dismiss="modal">Update
+                                    </button>
+                                    <button class="btn btn-outline-danger btn-block buttonAdd" data-dismiss="modal">Cancel
+                                        <i class="fas fa-paper-plane-o ml-1"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center editInsideWrapper">
+                            <button class="btn btn-outline-secondary btn-block editInside" data-dismiss="modal">Update data
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+
             <div class="text-center buttonEditWrapper">
-              <button class="btn btn-info btn-rounded btn-sm buttonEdit" data-toggle="modal" data-target="#modalEdit"
-                >Edit <i class="fas fa-edit"></i></i></a>
+                <button class="btn btn-info btn-rounded btn-sm buttonEdit" data-toggle="modal" data-target="#modalEdit">Edit <i class="fas fa-edit"></i></i>
+                    </a>
             </div>
-        
-            <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="modalDelete"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header text-center">
-                    <h4 class="modal-title w-100 font-weight-bold ml-5 text-danger">Delete</h4>
-                    <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body mx-3">
-                    <p class="text-center h4">Are you sure to delete selected row?</p>
-        
-                  </div>
-                  <div class="modal-footer d-flex justify-content-center deleteButtonsWrapper">
-                    <button type="button" class="btn btn-danger btnYesClass" id="btnYes" data-dismiss="modal">Yes</button>
-                    <button type="button" class="btn btn-primary btnNoClass" id="btnNo" data-dismiss="modal">No</button>
-                  </div>
+
+            <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="modalDelete" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100 font-weight-bold ml-5 text-danger">Delete</h4>
+                            <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mx-3">
+                            <p class="text-center h4">Are you sure to delete selected row?</p>
+
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center deleteButtonsWrapper">
+                            <button type="button" class="btn btn-danger btnYesClass" id="btnYes" data-dismiss="modal">Yes</button>
+                            <button type="button" class="btn btn-primary btnNoClass" id="btnNo" data-dismiss="modal">No</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-        
+
             <div class="text-center">
-              <button class="btn btn-danger btn-sm btn-rounded buttonDelete" data-toggle="modal" data-target="#modalDelete"
-                >Delete<i class="fas fa-times ml-1"></i></a>
+                <button class="btn btn-danger btn-sm btn-rounded buttonDelete" data-toggle="modal" data-target="#modalDelete">Delete<i class="fas fa-times ml-1"></i></a>
             </div>
         </div>
         <table class="table table-fluid table-striped" id="myTable">
@@ -1201,7 +1198,7 @@
             </tbody>
         </table>
 
-        </div>
+    </div>
 
     </div>
 
