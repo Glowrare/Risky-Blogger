@@ -151,30 +151,32 @@ footer .top-section a:hover {
         visibility: visible;
         display: block !important;
         text-align: left;
-        top: 20px;
+        top: 0;
         width: 80%;       
     }
 
     .carousel-caption h5 {
-        font-size: 1rem;
+        font-size: 0.5rem;
         font-weight: bold;
     }
     
     .carousel-caption p {
-        font-size: .75rem;
+        font-size: .5rem;
         font-style: italic;
+        margin-bottom: 2px;
     }
 
     .content-button {
-        border-radius: 5px;
-        padding: 5px;
+        border-radius: 0;
+        padding: 3px;
         margin-right: 20px;
         outline: none !important;
-        font-size: .75rem;
+        font-size: .5rem;
     }
 
     .faac-section {
         height: 150px;
+        padding-left: 20px;
     }
 
     .faac-section .humaaan-image{
@@ -201,14 +203,94 @@ footer .top-section a:hover {
     }
 
     footer {
-        font-size: .8rem !important;
+        height: auto;
+    }
+    footer .top-section {
+        display: block;
     }
     footer .page-logo {
         display: none;
-
     }
 
     footer .top-section h4 {
         font-size: 0.9rem;
+    }
+
+    .copyright-section {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-caption {
+        visibility: visible;
+        display: block !important;
+        text-align: left;
+        top: 10px;
+        width: 50%;       
+    }
+
+    .carousel-caption h5 {
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.9rem;
+        font-style: italic;
+        margin-bottom: 5px;
+    }
+
+    .content-button {
+        border-radius: 0;
+        padding: 3px;
+        margin-right: 20px;
+        outline: none !important;
+        font-size: 0.8rem;
+    }
+
+    .faac-section {
+        height: 230px;
+        padding-left: 20px;
+    }
+
+    .faac-section .humaaan-image{
+        display: none;
+    }
+
+    .content-heading-format {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    .content-paragraph-format {
+        font-size: .75rem;
+        color: #C51426;
+        font-style: italic;
+    }
+
+    .ratings-section {
+        height: 230px;
+    }
+
+    .ratings-cover-image {
+        display: none;
+    }
+
+    footer {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    
+    footer .page-logo {
+        display: none;
+    }
+
+    footer .top-section h4 {
+        font-size: 0.9rem;
+    }
+
+    .copyright-section {
+        display: block;
     }
 }
