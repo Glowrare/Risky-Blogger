@@ -10,13 +10,13 @@ div > .col-md-10 > .header {
     margin-bottom: 30px;
 }
 
-.row > .col-md-2 > .card {
+.row > .col-xl-2 > .card {
     border-radius: 0;
     height: 120px;
     box-shadow: 3px 5px 8px 1px rgba(202, 141, 141, 0.5);
 }
 
-.row > .col-md-2 > .card:hover {
+.row > .col-xl-2 > .card:hover {
     background-color:  #c51426;
     color: white;
     text-size-adjust: 1.2rem;
