@@ -13,25 +13,6 @@ body {
     flex-direction: column;
 }
 
-/* .blog-title {
-    height: 100px;
-    display: block;
-    position: relative;
-  }
-  
-.blog-title::after {
-    content: "";
-    background: url(../../img/blog_images/graphoc.jpg);
-    background-size: cover;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-  } */
-
 .title-details {
     display: flex;
     justify-content: space-between;
@@ -120,4 +101,58 @@ p .card-text a:hover {
 
 .featured-post hr {
     margin: 0.5rem;
+}
+
+@media screen and (max-width: 640px) {
+    #sticky-sidebar {
+        display: none;
+    }
+
+    .blog-preview {
+        padding-top: .5rem;
+    }
+    
+    .blog-preview > a > h3 {
+        font-size: 1.0rem;
+    }
+
+    .blog-preview > a > h5 {
+        font-size: 0.7rem;
+    }
+
+    .blog-preview > p {
+        font-size: .3rem;
+    }
+
+    .btn {
+        padding: 5px 15px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #sticky-sidebar {
+        display: none;
+    }
+
+    .blog-preview {
+        padding-top: .8rem;
+    }
+    
+    .blog-preview > a > h3 {
+        font-size: 1.5rem;
+    }
+
+    .blog-preview > a > h5 {
+        font-size: 1.0rem;
+    }
+
+    .blog-preview > p {
+        font-size: .8rem;
+    }
+
+    .btn {
+        padding: 15px 25px;
+    }
+
 }
