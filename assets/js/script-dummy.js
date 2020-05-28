@@ -7,7 +7,7 @@ $(document).ready(function() {
         let message = $('#input-text').val(); 
 
         let text = { 
-            username: "oluyemi",
+            username: "Ajibolanle",
             message 
         } 
 

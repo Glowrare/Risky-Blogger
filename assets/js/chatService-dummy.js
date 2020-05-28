@@ -8,16 +8,24 @@ const chatService = function() {
 
     let messageArray = [
         {
-            username: "oluyemi",
-            message: "This is a new message"
+            username: "Amie-Gold",
+            message: "Welcome! How can I help you today?"
         },
         {
-            username: "Demo",
-            message: "This is a new for demo"
+            username: "Ajibolanle",
+            message: "Ratings report"
         },
         {
-            username: "sample",
-            message: "Another reply from me"
+            username: "Amie-Gold",
+            message: "Alright. Click here"
+        },
+        {
+            username: "Ajibolanle",
+            message: "Get me FAAC for Abia state"
+        },
+        {
+            username: "Amie-Gold",
+            message: "..."
         }
     ];
 
@@ -34,7 +42,7 @@ const chatService = function() {
             $.each(messageArray, function(index, value) {
                 let messageList;
 
-                if (value.username !== "oluyemi") {
+                if (value.username !== "Ajibolanle") {
                     messageList = `
                     <div class="received-chats old-chats">
                     <div class="received-chats-img">
@@ -80,7 +88,7 @@ const chatService = function() {
             $.each(messageArray, function(index, value) {
                 let messageList;
 
-                if (value.username !== "oluyemi") {
+                if (value.username !== "Ajibolanle") {
                     messageList = `
                     <div class="received-chats old-chats">
                     <div class="received-chats-img">
