@@ -399,12 +399,12 @@ footer .top-section a:hover {
   }
   
   .msg-header .active {
-    font-family: 'ineherit';
+    font-family: 'Poppins', sans-serif;
     width: 250px;
     float: left;
   }
   
-  .active h5 {
+  .msg-header .active h5 {
     padding: 10px;
     font-family: 'Poppins', sans-serif;
     color: #444;
@@ -413,7 +413,7 @@ footer .top-section a:hover {
     margin: 0;
   }
   
-  .active h6 {
+  .msg-header .active h6 {
     font-size: 10px;
     line-height: 2px;
     color: #fff;
