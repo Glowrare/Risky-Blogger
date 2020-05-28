@@ -46,7 +46,7 @@ const chatService = function() {
                     messageList = `
                     <div class="received-chats old-chats">
                     <div class="received-chats-img">
-                        <img src="https://data.cometchat.com/assets/images/avatars/captainamerica.png" alt="Avatar" class="avatar">
+                        <img src="assets/img/chat-images/Bimpe-avatar-headshot.png" alt="Avatar" class="avatar">
                     </div>
 
                     <div class="received-msg">
@@ -66,7 +66,7 @@ const chatService = function() {
                             <p>${value.message}</p>
                         </div>
                         <div class="outgoing-chats-img">
-                            <img src="https://data.cometchat.com/assets/images/avatars/captainamerica.png" alt="" class="avatar">
+                            <img src="assets/img/chat-images/Niyi-avatar-headshot.png" alt="" class="avatar">
                         </div>
                     </div>
 `
@@ -92,7 +92,7 @@ const chatService = function() {
                     messageList = `
                     <div class="received-chats old-chats">
                     <div class="received-chats-img">
-                        <img src="https://data.cometchat.com/assets/images/avatars/captainamerica.png" alt="Avatar" class="avatar">
+                        <img src="assets/img/chat-images/Bimpe-avatar-headshot.png" alt="Avatar" class="avatar">
                     </div>
 
                     <div class="received-msg">
@@ -112,7 +112,7 @@ const chatService = function() {
                             <p>${value.message}</p>
                         </div>
                         <div class="outgoing-chats-img">
-                            <img src="https://data.cometchat.com/assets/images/avatars/captainamerica.png" alt="" class="avatar">
+                            <img src="assets/img/chat-images/Niyi-avatar-headshot.png" alt="" class="avatar">
                         </div>
                     </div>
 `

@@ -99,6 +99,31 @@ nav {
     padding-top: 20px;
 }
 
+.modal-ref {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+}
+
+.modal-ref i {
+    font-size: 3rem;
+    animation: rotation 10s infinite linear;
+    color: #C51426;
+}
+
+.modal-ref i:hover {
+    font-size: 3.5rem; 
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
 footer {
     height: 250px;    
     background: #C51426;
