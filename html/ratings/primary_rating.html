@@ -1045,8 +1045,10 @@
         </table>
 
     </div>
-
+    <div class="modal-ref" data-toggle="modal" data-target="#chatsimulation">
+        <i class="fas fa-question-circle" title="Ask me"></i>
     </div>
+    
 
     <footer>
         <div class="top-section">
@@ -1093,12 +1095,105 @@
         </div>
 
     </footer>
+    <!-- Modal starts here -->
+    <div class="modal fade" id="chatsimulation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="chat">
+                    <div class="container">
+                        <div class="msg-header">
+                            <div class="active">
+                                <h5>
+                                    Chat with Amie-Gold
+                                </h5>
+                            </div>
+                        </div>
+        
+                        <div class="chat-page">
+                            <div class="msg-inbox">
+                                <div class="chats" id="chats">
+                                    <div class="msg-page" id="msg-page">
+                                        <div class="loading-message-container" id="loading-message-container">
+                                            <div class="spinner">
+                                                    <svg width="100" height="100" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#003">
+                                                        <g fill="none" fill-rule="evenodd">
+                                                          <g transform="translate(1 1)" stroke-width="2">
+                                                            <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
+                                                            <path d="M36 18c0-9.94-8.06-18-18-18">
+                                                              <animateTransform
+                                                              attributeName="transform"
+                                                              type="rotate"
+                                                              from="0 18 18"
+                                                              to="360 18 18"
+                                                              dur="1s"
+                                                              repeatCount="indefinite"/>
+                                                            </path>
+                                                          </g>
+                                                        </g>
+                                                      </svg>
+                                            </div>  
+                                        </div>
+        
+                                        <div id="empty-chat" class="text-center img-fluid empty-chat">
+                                            <div class="empty-chat-holder">
+                                                <img src="../../assets/img/chat-images/empty-state.svg" class="img-res" alt="empty chat image">
+                                            </div>
+        
+                                            <div>
+                                                <h2>No new message?</h2>
+                                                <h6 class="empty-chat-sub-title">Send your first message below.</h6>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <div id="group-message-holder">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="msg-bottom">
+                                    <form class="message-form" id="message-form">
+                                        <div class="input-group">
+                                            <input type="text" id="input-text" class="form-control message-input" placeholder="Enter message here" required/>
+                                            <div id="send-message-spinner" class="spinner">
+                                                    <svg width="30" height="30" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#003">
+                                                        <g fill="none" fill-rule="evenodd">
+                                                          <g transform="translate(1 1)" stroke-width="2">
+                                                            <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
+                                                            <path d="M36 18c0-9.94-8.06-18-18-18">
+                                                              <animateTransform
+                                                              attributeName="transform"
+                                                              type="rotate"
+                                                              from="0 18 18"
+                                                              to="360 18 18"
+                                                              dur="1s"
+                                                              repeatCount="indefinite"/>
+                                                            </path>
+                                                          </g>
+                                                        </g>
+                                                      </svg>
+                                            </div> 
+                                            <input id="loggedInUID" type="hidden"/>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal ends here -->
 
     <!-- Javascript starts here -->
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
-
+    <script src="../../assets/js/chatService-dummy-no-index.js"></script>
+    <script src="../../assets/js/script-dummy.js"></script>
     <script>
         $(document).ready(function() {
             $('#myTable').DataTable();
