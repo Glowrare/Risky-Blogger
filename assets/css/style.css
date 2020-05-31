@@ -29,6 +29,11 @@ nav {
     border-bottom: solid 1px #c51426;
 }
 
+.carousel-item {
+  max-height: 70vh;
+  overflow: hidden;
+}
+
 .carousel-item img {
     opacity: 1;
 }
@@ -38,18 +43,25 @@ nav {
     font-family: inherit;
     font-size: 20px;
     text-align: left;
-    top: 20px;
+    top: 100px;
+    left: 30%;
     width: 40%;
 }
 
 .carousel-caption h5 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
 .carousel-caption p {
     font-size: 1rem;
     font-style: italic;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
 }
 
 .faac-section {
@@ -101,18 +113,20 @@ nav {
 
 .modal-ref {
     position: fixed;
-    top: 50%;
-    right: 5%;
+    top: 90%;
+    right: 1%;
 }
 
 .modal-ref i {
     font-size: 3rem;
     animation: rotation 10s infinite linear;
-    color: #C51426;
+    color: rgb(194, 164, 167);
 }
 
 .modal-ref i:hover {
-    font-size: 3.5rem; 
+    font-size: 3.5rem;
+    animation: none;
+    color: black;
 }
 
 @keyframes rotation {
@@ -164,20 +178,20 @@ footer .top-section a:hover {
 }
 
 @media screen and (max-width: 640px) {
-    .carousel-inner {
+    /* .carousel-inner {
         background: black;
     }
 
     .carousel-item img {
         visibility: hidden;
-    }
+    } */
 
     .carousel-caption {
         visibility: visible;
         display: block !important;
         text-align: left;
         top: 0;
-        width: 80%;       
+        width: 80%;     
     }
 
     .carousel-caption h5 {
@@ -186,9 +200,11 @@ footer .top-section a:hover {
     }
     
     .carousel-caption p {
-        font-size: .5rem;
-        font-style: italic;
-        margin-bottom: 2px;
+        display: none;
+    }
+
+    .mobile-mid-view {
+      display: block !important;
     }
 
     .content-button {
@@ -251,12 +267,13 @@ footer .top-section a:hover {
         visibility: visible;
         display: block !important;
         text-align: left;
-        top: 10px;
-        width: 50%;       
+        top: 30%;
+        width: 50%;
+        left: 20%;      
     }
 
     .carousel-caption h5 {
-        font-size: 0.9rem;
+        font-size: 1.9rem;
         font-weight: bold;
     }
     
@@ -274,9 +291,16 @@ footer .top-section a:hover {
         font-size: 0.8rem;
     }
 
+    .mobile-mid-view {
+      display: flex;
+      background: #F9E4E6;
+    }
+
     .faac-section {
-        height: 230px;
-        padding-left: 20px;
+        padding: 50px;
+        background: inherit;
+        border-right: solid white;
+        width: 50%;
     }
 
     .faac-section .humaaan-image{
@@ -295,11 +319,16 @@ footer .top-section a:hover {
     }
 
     .ratings-section {
-        height: 230px;
+        padding: 50px;
+        width: 50%;
     }
 
     .ratings-cover-image {
         display: none;
+    }
+
+    .modal-ref {
+      top: 65%;
     }
 
     footer {
