@@ -1,1183 +1,1166 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        <link rel="stylesheet" href="../../assets/css/style.css" />
+        <link rel="stylesheet" href="../../assets/css/ratings/primary-ratings.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+        <link rel="shortcut icon" type="image/png" href="../../assets/img/favicon/favicon.png" />
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script src="https://kit.fontawesome.com/5183653b0f.js" crossorigin="anonymous"></script>
+        <title>Risky Blogger - Ratings</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/ratings/primary-ratings.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="../../assets/img/favicon/favicon.png">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script src="https://kit.fontawesome.com/5183653b0f.js" crossorigin="anonymous"></script>
-    <title>Risky Blogger - Ratings</title>
-</head>
-
-<body>
-    <nav class="mb-1 navbar navbar-light navbar-expand-lg sticky-top">
-        <a class="navbar-brand" href="../../index.html"> <img src="../../assets/img/general-images/risky-blogger.png" width="auto" height="30" class="d-inline-block align-top" alt=""> Risky Blogger</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555" aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="../../index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../blog/primary-blog.html">Blog</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="../faac_disbursement/primary_faac_disbursement.html">FAAC</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="primary_rating.html">Ratings</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto nav-flex-icons">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-user"></i> Profile </a>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-                        <a class="dropdown-item" href="../log-in.html">Log out</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <h4>Report for Customers' ratings </h4>
-        <table class="table table-fluid table-striped table-responsive-lg" id="myTable">
-            <thead>
-                <tr>
-                    <th>Customer Name</th>
-                    <th>Base</th>
-                    <th>Branch</th>
-                    <th>Relationship Officer</th>
-                    <th>Directorate</th>
-                    <th>Rating</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Arewa Metal Containers</td>
-                    <td>1234568</td>
-                    <td>Ifako</td>
-                    <td>Ebenzer Akpandu</td>
-                    <td>Institutional</td>
-                    <td>BB</td>
-                    <td> <a href="#"> Download </a> </td>
-                </tr>
-                <tr>
-                    <td>Albert Tatlock</td>
-                    <td>1484</td>
-                    <td>Ishaga</td>
-                    <td>Tony Hancock</td>
-                    <td>Commercial</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Alex Handy</td>
-                    <td>1484</td>
-                    <td>Mainland</td>
-                    <td>Gary Wallace</td>
-                    <td>Institutional</td>
-                    <td>AAA</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Alex Small</td>
-                    <td>1904</td>
-                    <td>Ishaga</td>
-                    <td>Charlie Dream</td>
-                    <td>Commercial</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Alexander Grant</td>
-                    <td>1845</td>
-                    <td>Yaba</td>
-                    <td>Andrew Wallerston</td>
-                    <td>Commercial</td>
-                    <td>D</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Alison Brears</td>
-                    <td>113</td>
-                    <td>Dugbe</td>
-                    <td>Alexander Grant</td>
-                    <td>Corporate & Investment</td>
-                    <td>CC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Andrew Wallerston</td>
-                    <td>1484</td>
-                    <td>Dopemu</td>
-                    <td>Judith Lacy</td>
-                    <td>Retail</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Arthur Great</td>
-                    <td>1609</td>
-                    <td>Yaba</td>
-                    <td>Vicki Johnson</td>
-                    <td>Retail</td>
-                    <td>BBB</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Ben Grundy</td>
-                    <td>1609</td>
-                    <td>Ring road</td>
-                    <td>Paul Pasta</td>
-                    <td>Retail</td>
-                    <td>D</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Ben Tiny</td>
-                    <td>1904</td>
-                    <td>Abeokuta</td>
-                    <td>Kelly Surefoot</td>
-                    <td>Retail</td>
-                    <td>AA</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Charlie Dream</td>
-                    <td>113</td>
-                    <td>Mainland</td>
-                    <td>Albert Tatlock</td>
-                    <td>Institutional</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Clare Sad</td>
-                    <td>191</td>
-                    <td>Dopemu</td>
-                    <td>Fred Large</td>
-                    <td>Corporate & Investment</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Clare Williams</td>
-                    <td>191</td>
-                    <td>Head office</td>
-                    <td>Punjab Singh</td>
-                    <td>Retail</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Daniel Smith</td>
-                    <td>191</td>
-                    <td>Dugbe</td>
-                    <td>Paul Wankersle</td>
-                    <td>Commercial</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>David Roper</td>
-                    <td>1904</td>
-                    <td>Marina</td>
-                    <td>Fred Briggs</td>
-                    <td>Commercial</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Diana France</td>
-                    <td>191</td>
-                    <td>Dopemu</td>
-                    <td>Sally Webster</td>
-                    <td>Commercial</td>
-                    <td>AAA</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Fairy Periton</td>
-                    <td>191</td>
-                    <td>Ring road</td>
-                    <td>George Halston</td>
-                    <td>Retail</td>
-                    <td>CC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Francis Fartley</td>
-                    <td>1642</td>
-                    <td>Marina</td>
-                    <td>Jemma Jones</td>
-                    <td>Corporate & Investment</td>
-                    <td>C</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Fred Briggs</td>
-                    <td>1609</td>
-                    <td>Ishaga</td>
-                    <td>Harry Singh</td>
-                    <td>Corporate & Investment</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Fred Grantley</td>
-                    <td>191</td>
-                    <td>Abeokuta</td>
-                    <td>John Jones</td>
-                    <td>Commercial</td>
-                    <td>CC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Fred Large</td>
-                    <td>1904</td>
-                    <td>Iwo Road</td>
-                    <td>Janice Cudworth</td>
-                    <td>Commercial</td>
-                    <td>BB</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Freda Franklin</td>
-                    <td>191</td>
-                    <td>Yaba</td>
-                    <td>Grant Pony</td>
-                    <td>Corporate & Investment</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Gary Harrison</td>
-                    <td>1904</td>
-                    <td>Ishaga</td>
-                    <td>Jeremy Lions</td>
-                    <td>Institutional</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Gary Wallace</td>
-                    <td>113</td>
-                    <td>Ring road</td>
-                    <td>Jane Seymour</td>
-                    <td>Corporate & Investment</td>
-                    <td>AA</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>George Granger</td>
-                    <td>1609</td>
-                    <td>Ifako</td>
-                    <td>Mary Jones</td>
-                    <td>Institutional</td>
-                    <td>BBB</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>George Halston</td>
-                    <td>191</td>
-                    <td>Marina</td>
-                    <td>Joseph Pasta</td>
-                    <td>Institutional</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>George White</td>
-                    <td>1904</td>
-                    <td>Dugbe</td>
-                    <td>Johnny Cluney</td>
-                    <td>Corporate & Investment</td>
-                    <td>D</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Grant Clonger</td>
-                    <td>1609</td>
-                    <td>Dopemu</td>
-                    <td>Guy Winston</td>
-                    <td>Institutional</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Grant Pony</td>
-                    <td>191</td>
-                    <td>Dugbe</td>
-                    <td>Valerie Smarter</td>
-                    <td>Institutional</td>
-                    <td>C</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Guy Brennan</td>
-                    <td>1845</td>
-                    <td>Mainland</td>
-                    <td>Sandra Betterton</td>
-                    <td>Retail</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Guy Brown</td>
-                    <td>1904</td>
-                    <td>Ring road</td>
-                    <td>Linda Jarvis</td>
-                    <td>Commercial</td>
-                    <td>A</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Guy Winston</td>
-                    <td>191</td>
-                    <td>Ifako</td>
-                    <td>Judith Claxon</td>
-                    <td>Corporate & Investment</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Harry Singh</td>
-                    <td>1429</td>
-                    <td>Dugbe</td>
-                    <td>Jane Wanter</td>
-                    <td>Retail</td>
-                    <td>A</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>James Joyce</td>
-                    <td>1609</td>
-                    <td>Head office</td>
-                    <td>John Doe</td>
-                    <td>Corporate & Investment</td>
-                    <td>AAA</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>James McDonald</td>
-                    <td>1429</td>
-                    <td>Ishaga</td>
-                    <td>Julie Stone</td>
-                    <td>Commercial</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>James Robson</td>
-                    <td>1484</td>
-                    <td>Mainland</td>
-                    <td>Clare Williams</td>
-                    <td>Corporate & Investment</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Jane Seymour</td>
-                    <td>113</td>
-                    <td>Marina</td>
-                    <td>Guy Brennan</td>
-                    <td>Retail</td>
-                    <td>BB</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Jane Wanter</td>
-                    <td>191</td>
-                    <td>Marina</td>
-                    <td>Peter Singh</td>
-                    <td>Retail</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Janice Cudworth</td>
-                    <td>1904</td>
-                    <td>Iwo Road</td>
-                    <td>Jon Happy</td>
-                    <td>Retail</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Jayne Harvington</td>
-                    <td>113</td>
-                    <td>Ishaga</td>
-                    <td>Salvatore Bianco</td>
-                    <td>Institutional</td>
-                    <td>D</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Jemma Jones</td>
-                    <td>191</td>
-                    <td>Ring road</td>
-                    <td>John Smith</td>
-                    <td>Institutional</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Jeni Glot</td>
-                    <td>191</td>
-                    <td>Ishaga</td>
-                    <td>Mary Wallace</td>
-                    <td>Retail</td>
-                    <td>AAA</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Jeremy Jenson</td>
-                    <td>1609</td>
-                    <td>Iwo Road</td>
-                    <td>Grant Clonger</td>
-                    <td>Institutional</td>
-                    <td>D</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Jeremy Lions</td>
-                    <td>1484</td>
-                    <td>Abeokuta</td>
-                    <td>Alex Handy</td>
-                    <td>Corporate & Investment</td>
-                    <td>AAA</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>John Doe</td>
-                    <td>1429</td>
-                    <td>Mainland</td>
-                    <td>John Franklin</td>
-                    <td>Retail</td>
-                    <td>D</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>John Franklin</td>
-                    <td>1484</td>
-                    <td>Iwo Road</td>
-                    <td>Peter Plankton</td>
-                    <td>Institutional</td>
-                    <td>BB</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>John Jones</td>
-                    <td>1845</td>
-                    <td>Head office</td>
-                    <td>Clare Sad</td>
-                    <td>Institutional</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>John Smith</td>
-                    <td>1429</td>
-                    <td>Abeokuta</td>
-                    <td>Sarah Demitra</td>
-                    <td>Commercial</td>
-                    <td>D</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Johnny Cluney</td>
-                    <td>1609</td>
-                    <td>Abeokuta</td>
-                    <td>Daniel Smith</td>
-                    <td>Retail</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Jon Happy</td>
-                    <td>191</td>
-                    <td>Dopemu</td>
-                    <td>Mary Smith</td>
-                    <td>Corporate & Investment</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Jon Smith</td>
-                    <td>1429</td>
-                    <td>Iwo Road</td>
-                    <td>Sylvester Stanley</td>
-                    <td>Retail</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Joseph Pasta</td>
-                    <td>113</td>
-                    <td>Iwo Road</td>
-                    <td>Robert Black</td>
-                    <td>Commercial</td>
-                    <td>C</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Judith Claxon</td>
-                    <td>191</td>
-                    <td>Ifako</td>
-                    <td>Timmy Bolt</td>
-                    <td>Corporate & Investment</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Judith Lacy</td>
-                    <td>1642</td>
-                    <td>Yaba</td>
-                    <td>Tim Brown</td>
-                    <td>Commercial</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Julie Stone</td>
-                    <td>1642</td>
-                    <td>Abeokuta</td>
-                    <td>Tracy Shaw</td>
-                    <td>Retail</td>
-                    <td>BB</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Kate Hansom</td>
-                    <td>191</td>
-                    <td>Abeokuta</td>
-                    <td>James Robson</td>
-                    <td>Institutional</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Kate Hovelton</td>
-                    <td>191</td>
-                    <td>Dopemu</td>
-                    <td>Jeremy Jenson</td>
-                    <td>Commercial</td>
-                    <td>BBB</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Kelly Surefoot</td>
-                    <td>191</td>
-                    <td>Mainland</td>
-                    <td>James McDonald</td>
-                    <td>Commercial</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Linda Jarvis</td>
-                    <td>191</td>
-                    <td>Head office</td>
-                    <td>Kate Hansom</td>
-                    <td>Institutional</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Lynne Harris</td>
-                    <td>191</td>
-                    <td>Abeokuta</td>
-                    <td>George Granger</td>
-                    <td>Corporate & Investment</td>
-                    <td>D</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Mario Di Silva</td>
-                    <td>1484</td>
-                    <td>Marina</td>
-                    <td>Wendy Parker</td>
-                    <td>Commercial</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Martin Grimsdale</td>
-                    <td>1484</td>
-                    <td>Yaba</td>
-                    <td>Peter Samson</td>
-                    <td>Corporate & Investment</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Mary Fartley</td>
-                    <td>1642</td>
-                    <td>Ifako</td>
-                    <td>Jeni Glot</td>
-                    <td>Retail</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Mary Jones</td>
-                    <td>1609</td>
-                    <td>Ring road</td>
-                    <td>Alex Small</td>
-                    <td>Institutional</td>
-                    <td>D</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Mary Smith</td>
-                    <td>1609</td>
-                    <td>Head office</td>
-                    <td>Tony Marston</td>
-                    <td>Institutional</td>
-                    <td>AA</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Mary Wallace</td>
-                    <td>1845</td>
-                    <td>Ring road</td>
-                    <td>Tricia Scott</td>
-                    <td>Commercial</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Michael Fonteroy</td>
-                    <td>191</td>
-                    <td>Iwo Road</td>
-                    <td>Verily Stringent</td>
-                    <td>Corporate & Investment</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Pamela Johnston</td>
-                    <td>1609</td>
-                    <td>Yaba</td>
-                    <td>Martin Grimsdale</td>
-                    <td>Retail</td>
-                    <td>C</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Paul Baldwin</td>
-                    <td>1609</td>
-                    <td>Iwo Road</td>
-                    <td>Mario Di Silva</td>
-                    <td>Corporate & Investment</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Paul Pasta</td>
-                    <td>113</td>
-                    <td>Dugbe</td>
-                    <td>Robbie Fittipaldi</td>
-                    <td>Retail</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Paul Wankersle</td>
-                    <td>191</td>
-                    <td>Ring road</td>
-                    <td>Richard Walters</td>
-                    <td>Corporate & Investment</td>
-                    <td>BB</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Peter Plankton</td>
-                    <td>1904</td>
-                    <td>Yaba</td>
-                    <td>Francis Fartley</td>
-                    <td>Retail</td>
-                    <td>BB</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Peter Samson</td>
-                    <td>1609</td>
-                    <td>Head office</td>
-                    <td>James Joyce</td>
-                    <td>Retail</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Peter Singh</td>
-                    <td>1429</td>
-                    <td>Marina</td>
-                    <td>Tim Jolly</td>
-                    <td>Institutional</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Petra Smiler</td>
-                    <td>191</td>
-                    <td>Yaba</td>
-                    <td>Jayne Harvington</td>
-                    <td>Institutional</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Philip Di Filippo</td>
-                    <td>1609</td>
-                    <td>Yaba</td>
-                    <td>Robert Cardiff</td>
-                    <td>Institutional</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Philip Jones</td>
-                    <td>191</td>
-                    <td>Ifako</td>
-                    <td>Guy Brown</td>
-                    <td>Commercial</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Punjab Singh</td>
-                    <td>1904</td>
-                    <td>Mainland</td>
-                    <td>Pamela Johnston</td>
-                    <td>Institutional</td>
-                    <td>CC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Punjab Singh</td>
-                    <td>1429</td>
-                    <td>Iwo Road</td>
-                    <td>Fairy Periton</td>
-                    <td>Corporate & Investment</td>
-                    <td>A</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Richard Fasten</td>
-                    <td>113</td>
-                    <td>Head office</td>
-                    <td>Gary Harrison</td>
-                    <td>Commercial</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Richard Walters</td>
-                    <td>1484</td>
-                    <td>Ring road</td>
-                    <td>Simon Wanted</td>
-                    <td>Institutional</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Robbie Fittipaldi</td>
-                    <td>1484</td>
-                    <td>Dugbe</td>
-                    <td>Diana France</td>
-                    <td>Institutional</td>
-                    <td>AA</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Robert Black</td>
-                    <td>1904</td>
-                    <td>Dopemu</td>
-                    <td>Ben Tiny</td>
-                    <td>Retail</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Robert Cardiff</td>
-                    <td>1642</td>
-                    <td>Ishaga</td>
-                    <td>Philip Jones</td>
-                    <td>Corporate & Investment</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Robert Kullagh</td>
-                    <td>1642</td>
-                    <td>Dopemu</td>
-                    <td>Tom Clancy</td>
-                    <td>Retail</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Sally Glover</td>
-                    <td>191</td>
-                    <td>Ifako</td>
-                    <td>Sally Glover</td>
-                    <td>Retail</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Sally Webster</td>
-                    <td>191</td>
-                    <td>Ifako</td>
-                    <td>Petra Smiler</td>
-                    <td>Commercial</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Salvatore Bianco</td>
-                    <td>1904</td>
-                    <td>Mainland</td>
-                    <td>Kate Hovelton</td>
-                    <td>Corporate & Investment</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Sam Jackson</td>
-                    <td>1642</td>
-                    <td>Dugbe</td>
-                    <td>Sonia Periton</td>
-                    <td>Corporate & Investment</td>
-                    <td>BB</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Sandra Betterton</td>
-                    <td>1429</td>
-                    <td>Marina</td>
-                    <td>Mary Fartley</td>
-                    <td>Commercial</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Sarah Demitra</td>
-                    <td>191</td>
-                    <td>Marina</td>
-                    <td>Robert Kullagh</td>
-                    <td>Corporate & Investment</td>
-                    <td>BBB</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Simon Wanted</td>
-                    <td>191</td>
-                    <td>Ifako</td>
-                    <td>Fred Grantley</td>
-                    <td>Institutional</td>
-                    <td>C</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Sonia Periton</td>
-                    <td>191</td>
-                    <td>Dugbe</td>
-                    <td>George White</td>
-                    <td>Commercial</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Sylvester Stanley</td>
-                    <td>1642</td>
-                    <td>Iwo Road</td>
-                    <td>Alison Brears</td>
-                    <td>Retail</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Tim Brown</td>
-                    <td>1642</td>
-                    <td>Abeokuta</td>
-                    <td>Richard Fasten</td>
-                    <td>Institutional</td>
-                    <td>A</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Tim Jolly</td>
-                    <td>191</td>
-                    <td>Dopemu</td>
-                    <td>Philip Di Filippo</td>
-                    <td>Institutional</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Timmy Bolt</td>
-                    <td>191</td>
-                    <td>Marina</td>
-                    <td>Arthur Great</td>
-                    <td>Institutional</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Tom Clancy</td>
-                    <td>113</td>
-                    <td>Mainland</td>
-                    <td>Tony Swanson</td>
-                    <td>Corporate & Investment</td>
-                    <td>A</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Tony Hancock</td>
-                    <td>1484</td>
-                    <td>Head office</td>
-                    <td>Michael Fonteroy</td>
-                    <td>Commercial</td>
-                    <td>D</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Tony Marston</td>
-                    <td>1642</td>
-                    <td>Mainland</td>
-                    <td>Punjab Singh</td>
-                    <td>Commercial</td>
-                    <td>AA</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Tony Swanson</td>
-                    <td>191</td>
-                    <td>Ifako</td>
-                    <td>Ben Grundy</td>
-                    <td>Corporate & Investment</td>
-                    <td>BB</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Tracy Shaw</td>
-                    <td>1642</td>
-                    <td>Ishaga</td>
-                    <td>Freda Franklin</td>
-                    <td>Retail</td>
-                    <td>BBB</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Tricia Scott</td>
-                    <td>113</td>
-                    <td>Ring road</td>
-                    <td>David Roper</td>
-                    <td>Commercial</td>
-                    <td>B</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Valerie Smarter</td>
-                    <td>1609</td>
-                    <td>Yaba</td>
-                    <td>Jon Smith</td>
-                    <td>Commercial</td>
-                    <td>BB</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Verily Stringent</td>
-                    <td>1904</td>
-                    <td>Abeokuta</td>
-                    <td>Paul Baldwin</td>
-                    <td>Corporate & Investment</td>
-                    <td>CCC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Vicki Johnson</td>
-                    <td>113</td>
-                    <td>Dugbe</td>
-                    <td>Lynne Harris</td>
-                    <td>Institutional</td>
-                    <td>BB</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Wendy Parker</td>
-                    <td>1845</td>
-                    <td>Ifako</td>
-                    <td>Wendy Walters</td>
-                    <td>Institutional</td>
-                    <td>AAA</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-                <tr>
-                    <td>Wendy Walters</td>
-                    <td>113</td>
-                    <td>Head office</td>
-                    <td>Sam Jackson</td>
-                    <td>Corporate & Investment</td>
-                    <td>CC</td>
-                    <td><a href="#"> Download</a></td>
-                </tr>
-
-            </tbody>
-        </table>
-
-    </div>
-    <div class="modal-ref" data-toggle="modal" data-target="#chatsimulation">
-        <i class="fas fa-question-circle" title="Ask me"></i>
-    </div>
-    
-
-    <footer>
-        <div class="top-section">
-            <div class="page-logo">
-                <img src="../../assets/img/general-images/risky-blogger.png" alt="">
-            </div>
-            <div class="address-space">
-                <h4>Address</h4>
-                <p>Sterling Towers
-                    <br> Credit Risk, 15th floor (long wing)
-                    <br> 20 Marina Lagos
-                </p>
-            </div>
-            <div class="contacts-space">
-                <h4>Contacts</h4>
-                <p> Email: <a href="mailto:creditrisk@sterling.ng">creditrisk@sterling.ng </a>
-                    <br> Phone: <a href="tel:+2345">+2345</a>
-                </p>
-            </div>
-            <div class="downloads-space">
-                <h4>Downloads</h4>
-                <p>
-                    <a href="#"> CPG </a>
-                    <br>
-                    <a href="#"> Newsletter </a>
-                    <br>
-                    <a href="#"> Videos </a>
-                </p>
-            </div>
-        </div>
-        <hr style="border: solid 1px white; width: 100%;">
-        <div class="copyright-section">
-            <div class="copyright">
-                <p>© Copyright 2020 Credit Risk - All Rights Reserved</p>
-            </div>
-            <div class="social-media-icons">
-                <span>
-                  <a href="#" style="padding-right: 20px;"><img src="../../assets/img/landing-page/iconfinder_57-outlook_843780.png" alt=""></a>
-                  <a href="#" style="padding-right: 20px;"><img src="../../assets/img/landing-page/iconfinder_ic_spd_logo_5761482.png" alt=""></a>
-                  <a href="#" style="padding-right: 20px;"><img src="../../assets/img/landing-page/iconfinder_Yammer_669638.png" alt=""></a>
-                </span>
-
-            </div>
-        </div>
-
-    </footer>
-    <!-- Modal starts here -->
-    <div class="modal fade" id="chatsimulation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="chat">
-                    <div class="container">
-                        <div class="msg-header">
-                            <div class="active">
-                                <h5>
-                                    Chat with Amie-Gold
-                                </h5>
-                            </div>
+    <body>
+        <nav class="mb-1 navbar navbar-light navbar-expand-lg sticky-top">
+            <a class="navbar-brand" href="../../index.html"> <img src="../../assets/img/general-images/risky-blogger.png" width="auto" height="30" class="d-inline-block align-top" alt="" /> Risky Blogger</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555" aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../../index.html">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../blog/primary-blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../faac_disbursement/primary_faac_disbursement.html">FAAC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="primary_rating.html">Ratings</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-user"></i> Profile </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+                            <a class="dropdown-item" href="../log-in.html">Log out</a>
                         </div>
-        
-                        <div class="chat-page">
-                            <div class="msg-inbox">
-                                <div class="chats" id="chats">
-                                    <div class="msg-page" id="msg-page">
-                                        <div class="loading-message-container" id="loading-message-container">
-                                            <div class="spinner">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <h4>Report for Customers' ratings</h4>
+            <table class="table table-fluid table-striped table-responsive-lg" id="myTable">
+                <thead>
+                    <tr>
+                        <th>Customer Name</th>
+                        <th>Base</th>
+                        <th>Branch</th>
+                        <th>Relationship Officer</th>
+                        <th>Directorate</th>
+                        <th>Rating</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Arewa Metal Containers</td>
+                        <td>1234568</td>
+                        <td>Ifako</td>
+                        <td>Ebenzer Akpandu</td>
+                        <td>Institutional</td>
+                        <td>BB</td>
+                        <td><a href="#"> Download </a></td>
+                    </tr>
+                    <tr>
+                        <td>Albert Tatlock</td>
+                        <td>1484</td>
+                        <td>Ishaga</td>
+                        <td>Tony Hancock</td>
+                        <td>Commercial</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Alex Handy</td>
+                        <td>1484</td>
+                        <td>Mainland</td>
+                        <td>Gary Wallace</td>
+                        <td>Institutional</td>
+                        <td>AAA</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Alex Small</td>
+                        <td>1904</td>
+                        <td>Ishaga</td>
+                        <td>Charlie Dream</td>
+                        <td>Commercial</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Alexander Grant</td>
+                        <td>1845</td>
+                        <td>Yaba</td>
+                        <td>Andrew Wallerston</td>
+                        <td>Commercial</td>
+                        <td>D</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Alison Brears</td>
+                        <td>113</td>
+                        <td>Dugbe</td>
+                        <td>Alexander Grant</td>
+                        <td>Corporate & Investment</td>
+                        <td>CC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Andrew Wallerston</td>
+                        <td>1484</td>
+                        <td>Dopemu</td>
+                        <td>Judith Lacy</td>
+                        <td>Retail</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Arthur Great</td>
+                        <td>1609</td>
+                        <td>Yaba</td>
+                        <td>Vicki Johnson</td>
+                        <td>Retail</td>
+                        <td>BBB</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Ben Grundy</td>
+                        <td>1609</td>
+                        <td>Ring road</td>
+                        <td>Paul Pasta</td>
+                        <td>Retail</td>
+                        <td>D</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Ben Tiny</td>
+                        <td>1904</td>
+                        <td>Abeokuta</td>
+                        <td>Kelly Surefoot</td>
+                        <td>Retail</td>
+                        <td>AA</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Charlie Dream</td>
+                        <td>113</td>
+                        <td>Mainland</td>
+                        <td>Albert Tatlock</td>
+                        <td>Institutional</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Clare Sad</td>
+                        <td>191</td>
+                        <td>Dopemu</td>
+                        <td>Fred Large</td>
+                        <td>Corporate & Investment</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Clare Williams</td>
+                        <td>191</td>
+                        <td>Head office</td>
+                        <td>Punjab Singh</td>
+                        <td>Retail</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Daniel Smith</td>
+                        <td>191</td>
+                        <td>Dugbe</td>
+                        <td>Paul Wankersle</td>
+                        <td>Commercial</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>David Roper</td>
+                        <td>1904</td>
+                        <td>Marina</td>
+                        <td>Fred Briggs</td>
+                        <td>Commercial</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Diana France</td>
+                        <td>191</td>
+                        <td>Dopemu</td>
+                        <td>Sally Webster</td>
+                        <td>Commercial</td>
+                        <td>AAA</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Fairy Periton</td>
+                        <td>191</td>
+                        <td>Ring road</td>
+                        <td>George Halston</td>
+                        <td>Retail</td>
+                        <td>CC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Francis Fartley</td>
+                        <td>1642</td>
+                        <td>Marina</td>
+                        <td>Jemma Jones</td>
+                        <td>Corporate & Investment</td>
+                        <td>C</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Fred Briggs</td>
+                        <td>1609</td>
+                        <td>Ishaga</td>
+                        <td>Harry Singh</td>
+                        <td>Corporate & Investment</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Fred Grantley</td>
+                        <td>191</td>
+                        <td>Abeokuta</td>
+                        <td>John Jones</td>
+                        <td>Commercial</td>
+                        <td>CC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Fred Large</td>
+                        <td>1904</td>
+                        <td>Iwo Road</td>
+                        <td>Janice Cudworth</td>
+                        <td>Commercial</td>
+                        <td>BB</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Freda Franklin</td>
+                        <td>191</td>
+                        <td>Yaba</td>
+                        <td>Grant Pony</td>
+                        <td>Corporate & Investment</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Gary Harrison</td>
+                        <td>1904</td>
+                        <td>Ishaga</td>
+                        <td>Jeremy Lions</td>
+                        <td>Institutional</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Gary Wallace</td>
+                        <td>113</td>
+                        <td>Ring road</td>
+                        <td>Jane Seymour</td>
+                        <td>Corporate & Investment</td>
+                        <td>AA</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>George Granger</td>
+                        <td>1609</td>
+                        <td>Ifako</td>
+                        <td>Mary Jones</td>
+                        <td>Institutional</td>
+                        <td>BBB</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>George Halston</td>
+                        <td>191</td>
+                        <td>Marina</td>
+                        <td>Joseph Pasta</td>
+                        <td>Institutional</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>George White</td>
+                        <td>1904</td>
+                        <td>Dugbe</td>
+                        <td>Johnny Cluney</td>
+                        <td>Corporate & Investment</td>
+                        <td>D</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Grant Clonger</td>
+                        <td>1609</td>
+                        <td>Dopemu</td>
+                        <td>Guy Winston</td>
+                        <td>Institutional</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Grant Pony</td>
+                        <td>191</td>
+                        <td>Dugbe</td>
+                        <td>Valerie Smarter</td>
+                        <td>Institutional</td>
+                        <td>C</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Guy Brennan</td>
+                        <td>1845</td>
+                        <td>Mainland</td>
+                        <td>Sandra Betterton</td>
+                        <td>Retail</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Guy Brown</td>
+                        <td>1904</td>
+                        <td>Ring road</td>
+                        <td>Linda Jarvis</td>
+                        <td>Commercial</td>
+                        <td>A</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Guy Winston</td>
+                        <td>191</td>
+                        <td>Ifako</td>
+                        <td>Judith Claxon</td>
+                        <td>Corporate & Investment</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Harry Singh</td>
+                        <td>1429</td>
+                        <td>Dugbe</td>
+                        <td>Jane Wanter</td>
+                        <td>Retail</td>
+                        <td>A</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>James Joyce</td>
+                        <td>1609</td>
+                        <td>Head office</td>
+                        <td>John Doe</td>
+                        <td>Corporate & Investment</td>
+                        <td>AAA</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>James McDonald</td>
+                        <td>1429</td>
+                        <td>Ishaga</td>
+                        <td>Julie Stone</td>
+                        <td>Commercial</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>James Robson</td>
+                        <td>1484</td>
+                        <td>Mainland</td>
+                        <td>Clare Williams</td>
+                        <td>Corporate & Investment</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Jane Seymour</td>
+                        <td>113</td>
+                        <td>Marina</td>
+                        <td>Guy Brennan</td>
+                        <td>Retail</td>
+                        <td>BB</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Jane Wanter</td>
+                        <td>191</td>
+                        <td>Marina</td>
+                        <td>Peter Singh</td>
+                        <td>Retail</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Janice Cudworth</td>
+                        <td>1904</td>
+                        <td>Iwo Road</td>
+                        <td>Jon Happy</td>
+                        <td>Retail</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Jayne Harvington</td>
+                        <td>113</td>
+                        <td>Ishaga</td>
+                        <td>Salvatore Bianco</td>
+                        <td>Institutional</td>
+                        <td>D</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Jemma Jones</td>
+                        <td>191</td>
+                        <td>Ring road</td>
+                        <td>John Smith</td>
+                        <td>Institutional</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Jeni Glot</td>
+                        <td>191</td>
+                        <td>Ishaga</td>
+                        <td>Mary Wallace</td>
+                        <td>Retail</td>
+                        <td>AAA</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Jeremy Jenson</td>
+                        <td>1609</td>
+                        <td>Iwo Road</td>
+                        <td>Grant Clonger</td>
+                        <td>Institutional</td>
+                        <td>D</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Jeremy Lions</td>
+                        <td>1484</td>
+                        <td>Abeokuta</td>
+                        <td>Alex Handy</td>
+                        <td>Corporate & Investment</td>
+                        <td>AAA</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>1429</td>
+                        <td>Mainland</td>
+                        <td>John Franklin</td>
+                        <td>Retail</td>
+                        <td>D</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>John Franklin</td>
+                        <td>1484</td>
+                        <td>Iwo Road</td>
+                        <td>Peter Plankton</td>
+                        <td>Institutional</td>
+                        <td>BB</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>John Jones</td>
+                        <td>1845</td>
+                        <td>Head office</td>
+                        <td>Clare Sad</td>
+                        <td>Institutional</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>John Smith</td>
+                        <td>1429</td>
+                        <td>Abeokuta</td>
+                        <td>Sarah Demitra</td>
+                        <td>Commercial</td>
+                        <td>D</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Johnny Cluney</td>
+                        <td>1609</td>
+                        <td>Abeokuta</td>
+                        <td>Daniel Smith</td>
+                        <td>Retail</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Jon Happy</td>
+                        <td>191</td>
+                        <td>Dopemu</td>
+                        <td>Mary Smith</td>
+                        <td>Corporate & Investment</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Jon Smith</td>
+                        <td>1429</td>
+                        <td>Iwo Road</td>
+                        <td>Sylvester Stanley</td>
+                        <td>Retail</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Joseph Pasta</td>
+                        <td>113</td>
+                        <td>Iwo Road</td>
+                        <td>Robert Black</td>
+                        <td>Commercial</td>
+                        <td>C</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Judith Claxon</td>
+                        <td>191</td>
+                        <td>Ifako</td>
+                        <td>Timmy Bolt</td>
+                        <td>Corporate & Investment</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Judith Lacy</td>
+                        <td>1642</td>
+                        <td>Yaba</td>
+                        <td>Tim Brown</td>
+                        <td>Commercial</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Julie Stone</td>
+                        <td>1642</td>
+                        <td>Abeokuta</td>
+                        <td>Tracy Shaw</td>
+                        <td>Retail</td>
+                        <td>BB</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Kate Hansom</td>
+                        <td>191</td>
+                        <td>Abeokuta</td>
+                        <td>James Robson</td>
+                        <td>Institutional</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Kate Hovelton</td>
+                        <td>191</td>
+                        <td>Dopemu</td>
+                        <td>Jeremy Jenson</td>
+                        <td>Commercial</td>
+                        <td>BBB</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Kelly Surefoot</td>
+                        <td>191</td>
+                        <td>Mainland</td>
+                        <td>James McDonald</td>
+                        <td>Commercial</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Linda Jarvis</td>
+                        <td>191</td>
+                        <td>Head office</td>
+                        <td>Kate Hansom</td>
+                        <td>Institutional</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lynne Harris</td>
+                        <td>191</td>
+                        <td>Abeokuta</td>
+                        <td>George Granger</td>
+                        <td>Corporate & Investment</td>
+                        <td>D</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Mario Di Silva</td>
+                        <td>1484</td>
+                        <td>Marina</td>
+                        <td>Wendy Parker</td>
+                        <td>Commercial</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Martin Grimsdale</td>
+                        <td>1484</td>
+                        <td>Yaba</td>
+                        <td>Peter Samson</td>
+                        <td>Corporate & Investment</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Mary Fartley</td>
+                        <td>1642</td>
+                        <td>Ifako</td>
+                        <td>Jeni Glot</td>
+                        <td>Retail</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Mary Jones</td>
+                        <td>1609</td>
+                        <td>Ring road</td>
+                        <td>Alex Small</td>
+                        <td>Institutional</td>
+                        <td>D</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Mary Smith</td>
+                        <td>1609</td>
+                        <td>Head office</td>
+                        <td>Tony Marston</td>
+                        <td>Institutional</td>
+                        <td>AA</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Mary Wallace</td>
+                        <td>1845</td>
+                        <td>Ring road</td>
+                        <td>Tricia Scott</td>
+                        <td>Commercial</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Michael Fonteroy</td>
+                        <td>191</td>
+                        <td>Iwo Road</td>
+                        <td>Verily Stringent</td>
+                        <td>Corporate & Investment</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Pamela Johnston</td>
+                        <td>1609</td>
+                        <td>Yaba</td>
+                        <td>Martin Grimsdale</td>
+                        <td>Retail</td>
+                        <td>C</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Paul Baldwin</td>
+                        <td>1609</td>
+                        <td>Iwo Road</td>
+                        <td>Mario Di Silva</td>
+                        <td>Corporate & Investment</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Paul Pasta</td>
+                        <td>113</td>
+                        <td>Dugbe</td>
+                        <td>Robbie Fittipaldi</td>
+                        <td>Retail</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Paul Wankersle</td>
+                        <td>191</td>
+                        <td>Ring road</td>
+                        <td>Richard Walters</td>
+                        <td>Corporate & Investment</td>
+                        <td>BB</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Peter Plankton</td>
+                        <td>1904</td>
+                        <td>Yaba</td>
+                        <td>Francis Fartley</td>
+                        <td>Retail</td>
+                        <td>BB</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Peter Samson</td>
+                        <td>1609</td>
+                        <td>Head office</td>
+                        <td>James Joyce</td>
+                        <td>Retail</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Peter Singh</td>
+                        <td>1429</td>
+                        <td>Marina</td>
+                        <td>Tim Jolly</td>
+                        <td>Institutional</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Petra Smiler</td>
+                        <td>191</td>
+                        <td>Yaba</td>
+                        <td>Jayne Harvington</td>
+                        <td>Institutional</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Philip Di Filippo</td>
+                        <td>1609</td>
+                        <td>Yaba</td>
+                        <td>Robert Cardiff</td>
+                        <td>Institutional</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Philip Jones</td>
+                        <td>191</td>
+                        <td>Ifako</td>
+                        <td>Guy Brown</td>
+                        <td>Commercial</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Punjab Singh</td>
+                        <td>1904</td>
+                        <td>Mainland</td>
+                        <td>Pamela Johnston</td>
+                        <td>Institutional</td>
+                        <td>CC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Punjab Singh</td>
+                        <td>1429</td>
+                        <td>Iwo Road</td>
+                        <td>Fairy Periton</td>
+                        <td>Corporate & Investment</td>
+                        <td>A</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Richard Fasten</td>
+                        <td>113</td>
+                        <td>Head office</td>
+                        <td>Gary Harrison</td>
+                        <td>Commercial</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Richard Walters</td>
+                        <td>1484</td>
+                        <td>Ring road</td>
+                        <td>Simon Wanted</td>
+                        <td>Institutional</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Robbie Fittipaldi</td>
+                        <td>1484</td>
+                        <td>Dugbe</td>
+                        <td>Diana France</td>
+                        <td>Institutional</td>
+                        <td>AA</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Robert Black</td>
+                        <td>1904</td>
+                        <td>Dopemu</td>
+                        <td>Ben Tiny</td>
+                        <td>Retail</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Robert Cardiff</td>
+                        <td>1642</td>
+                        <td>Ishaga</td>
+                        <td>Philip Jones</td>
+                        <td>Corporate & Investment</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Robert Kullagh</td>
+                        <td>1642</td>
+                        <td>Dopemu</td>
+                        <td>Tom Clancy</td>
+                        <td>Retail</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sally Glover</td>
+                        <td>191</td>
+                        <td>Ifako</td>
+                        <td>Sally Glover</td>
+                        <td>Retail</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sally Webster</td>
+                        <td>191</td>
+                        <td>Ifako</td>
+                        <td>Petra Smiler</td>
+                        <td>Commercial</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Salvatore Bianco</td>
+                        <td>1904</td>
+                        <td>Mainland</td>
+                        <td>Kate Hovelton</td>
+                        <td>Corporate & Investment</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sam Jackson</td>
+                        <td>1642</td>
+                        <td>Dugbe</td>
+                        <td>Sonia Periton</td>
+                        <td>Corporate & Investment</td>
+                        <td>BB</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sandra Betterton</td>
+                        <td>1429</td>
+                        <td>Marina</td>
+                        <td>Mary Fartley</td>
+                        <td>Commercial</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sarah Demitra</td>
+                        <td>191</td>
+                        <td>Marina</td>
+                        <td>Robert Kullagh</td>
+                        <td>Corporate & Investment</td>
+                        <td>BBB</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Simon Wanted</td>
+                        <td>191</td>
+                        <td>Ifako</td>
+                        <td>Fred Grantley</td>
+                        <td>Institutional</td>
+                        <td>C</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sonia Periton</td>
+                        <td>191</td>
+                        <td>Dugbe</td>
+                        <td>George White</td>
+                        <td>Commercial</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sylvester Stanley</td>
+                        <td>1642</td>
+                        <td>Iwo Road</td>
+                        <td>Alison Brears</td>
+                        <td>Retail</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Tim Brown</td>
+                        <td>1642</td>
+                        <td>Abeokuta</td>
+                        <td>Richard Fasten</td>
+                        <td>Institutional</td>
+                        <td>A</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Tim Jolly</td>
+                        <td>191</td>
+                        <td>Dopemu</td>
+                        <td>Philip Di Filippo</td>
+                        <td>Institutional</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Timmy Bolt</td>
+                        <td>191</td>
+                        <td>Marina</td>
+                        <td>Arthur Great</td>
+                        <td>Institutional</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Tom Clancy</td>
+                        <td>113</td>
+                        <td>Mainland</td>
+                        <td>Tony Swanson</td>
+                        <td>Corporate & Investment</td>
+                        <td>A</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Tony Hancock</td>
+                        <td>1484</td>
+                        <td>Head office</td>
+                        <td>Michael Fonteroy</td>
+                        <td>Commercial</td>
+                        <td>D</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Tony Marston</td>
+                        <td>1642</td>
+                        <td>Mainland</td>
+                        <td>Punjab Singh</td>
+                        <td>Commercial</td>
+                        <td>AA</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Tony Swanson</td>
+                        <td>191</td>
+                        <td>Ifako</td>
+                        <td>Ben Grundy</td>
+                        <td>Corporate & Investment</td>
+                        <td>BB</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Tracy Shaw</td>
+                        <td>1642</td>
+                        <td>Ishaga</td>
+                        <td>Freda Franklin</td>
+                        <td>Retail</td>
+                        <td>BBB</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Tricia Scott</td>
+                        <td>113</td>
+                        <td>Ring road</td>
+                        <td>David Roper</td>
+                        <td>Commercial</td>
+                        <td>B</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Valerie Smarter</td>
+                        <td>1609</td>
+                        <td>Yaba</td>
+                        <td>Jon Smith</td>
+                        <td>Commercial</td>
+                        <td>BB</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Verily Stringent</td>
+                        <td>1904</td>
+                        <td>Abeokuta</td>
+                        <td>Paul Baldwin</td>
+                        <td>Corporate & Investment</td>
+                        <td>CCC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Vicki Johnson</td>
+                        <td>113</td>
+                        <td>Dugbe</td>
+                        <td>Lynne Harris</td>
+                        <td>Institutional</td>
+                        <td>BB</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Wendy Parker</td>
+                        <td>1845</td>
+                        <td>Ifako</td>
+                        <td>Wendy Walters</td>
+                        <td>Institutional</td>
+                        <td>AAA</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Wendy Walters</td>
+                        <td>113</td>
+                        <td>Head office</td>
+                        <td>Sam Jackson</td>
+                        <td>Corporate & Investment</td>
+                        <td>CC</td>
+                        <td><a href="#"> Download</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-ref" data-toggle="modal" data-target="#chatsimulation">
+            <i class="fas fa-question-circle" title="Ask me"></i>
+        </div>
+
+        <footer>
+            <div class="top-section">
+                <div class="page-logo">
+                    <img src="../../assets/img/general-images/risky-blogger.png" alt="" />
+                </div>
+                <div class="address-space">
+                    <h4>Address</h4>
+                    <p>
+                        Sterling Towers <br />
+                        Credit Risk, 15th floor (long wing) <br />
+                        20 Marina Lagos
+                    </p>
+                </div>
+                <div class="contacts-space">
+                    <h4>Contacts</h4>
+                    <p>
+                        Email: <a href="mailto:creditrisk@sterling.ng">creditrisk@sterling.ng </a> <br />
+                        Phone: <a href="tel:+2345">+2345</a>
+                    </p>
+                </div>
+                <div class="downloads-space">
+                    <h4>Downloads</h4>
+                    <p>
+                        <a href="#"> CPG </a>
+                        <br />
+                        <a href="#"> Newsletter </a>
+                        <br />
+                        <a href="#"> Videos </a>
+                    </p>
+                </div>
+            </div>
+            <hr style="border: solid 1px white; width: 100%;" />
+            <div class="copyright-section">
+                <div class="copyright">
+                    <p>© Copyright 2020 Credit Risk - All Rights Reserved</p>
+                </div>
+                <div class="social-media-icons">
+                    <span>
+                        <a href="#" style="padding-right: 20px;"><img src="../../assets/img/landing-page/iconfinder_57-outlook_843780.png" alt="" /></a>
+                        <a href="#" style="padding-right: 20px;"><img src="../../assets/img/landing-page/iconfinder_ic_spd_logo_5761482.png" alt="" /></a>
+                        <a href="#" style="padding-right: 20px;"><img src="../../assets/img/landing-page/iconfinder_Yammer_669638.png" alt="" /></a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+        <!-- Modal starts here -->
+        <div class="modal fade" id="chatsimulation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="chat">
+                        <div class="container">
+                            <div class="msg-header">
+                                <div class="active">
+                                    <h5>
+                                        Chat with Amie-Gold
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="chat-page">
+                                <div class="msg-inbox">
+                                    <div class="chats" id="chats">
+                                        <div class="msg-page" id="msg-page">
+                                            <div class="loading-message-container" id="loading-message-container">
+                                                <div class="spinner">
                                                     <svg width="100" height="100" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#003">
                                                         <g fill="none" fill-rule="evenodd">
-                                                          <g transform="translate(1 1)" stroke-width="2">
-                                                            <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
-                                                            <path d="M36 18c0-9.94-8.06-18-18-18">
-                                                              <animateTransform
-                                                              attributeName="transform"
-                                                              type="rotate"
-                                                              from="0 18 18"
-                                                              to="360 18 18"
-                                                              dur="1s"
-                                                              repeatCount="indefinite"/>
-                                                            </path>
-                                                          </g>
+                                                            <g transform="translate(1 1)" stroke-width="2">
+                                                                <circle stroke-opacity=".5" cx="18" cy="18" r="18" />
+                                                                <path d="M36 18c0-9.94-8.06-18-18-18">
+                                                                    <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1s" repeatCount="indefinite" />
+                                                                </path>
+                                                            </g>
                                                         </g>
-                                                      </svg>
-                                            </div>  
-                                        </div>
-        
-                                        <div id="empty-chat" class="text-center img-fluid empty-chat">
-                                            <div class="empty-chat-holder">
-                                                <img src="../../assets/img/chat-images/empty-state.svg" class="img-res" alt="empty chat image">
+                                                    </svg>
+                                                </div>
                                             </div>
-        
+
+                                            <div id="empty-chat" class="text-center img-fluid empty-chat">
+                                                <div class="empty-chat-holder">
+                                                    <img src="../../assets/img/chat-images/empty-state.svg" class="img-res" alt="empty chat image" />
+                                                </div>
+
+                                                <div>
+                                                    <h2>No new message?</h2>
+                                                    <h6 class="empty-chat-sub-title">Send your first message below.</h6>
+                                                </div>
+                                            </div>
+
                                             <div>
-                                                <h2>No new message?</h2>
-                                                <h6 class="empty-chat-sub-title">Send your first message below.</h6>
-                                            </div>
-                                        </div>
-        
-                                        <div>
-                                            <div id="group-message-holder">
-                                                
+                                                <div id="group-message-holder"></div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-        
-                                <div class="msg-bottom">
-                                    <form class="message-form" id="message-form">
-                                        <div class="input-group">
-                                            <input type="text" id="input-text" class="form-control message-input" placeholder="Enter message here" required/>
-                                            <div id="send-message-spinner" class="spinner">
+
+                                    <div class="msg-bottom">
+                                        <form class="message-form" id="message-form">
+                                            <div class="input-group">
+                                                <input type="text" id="input-text" class="form-control message-input" placeholder="Enter message here" required />
+                                                <div id="send-message-spinner" class="spinner">
                                                     <svg width="30" height="30" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#003">
                                                         <g fill="none" fill-rule="evenodd">
-                                                          <g transform="translate(1 1)" stroke-width="2">
-                                                            <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
-                                                            <path d="M36 18c0-9.94-8.06-18-18-18">
-                                                              <animateTransform
-                                                              attributeName="transform"
-                                                              type="rotate"
-                                                              from="0 18 18"
-                                                              to="360 18 18"
-                                                              dur="1s"
-                                                              repeatCount="indefinite"/>
-                                                            </path>
-                                                          </g>
+                                                            <g transform="translate(1 1)" stroke-width="2">
+                                                                <circle stroke-opacity=".5" cx="18" cy="18" r="18" />
+                                                                <path d="M36 18c0-9.94-8.06-18-18-18">
+                                                                    <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1s" repeatCount="indefinite" />
+                                                                </path>
+                                                            </g>
                                                         </g>
-                                                      </svg>
-                                            </div> 
-                                            <input id="loggedInUID" type="hidden"/>
-                                        </div>
-                                    </form>
+                                                    </svg>
+                                                </div>
+                                                <input id="loggedInUID" type="hidden" />
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1185,22 +1168,20 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Modal ends here -->
+        <!-- Modal ends here -->
 
-    <!-- Javascript starts here -->
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
-    <script src="../../assets/js/chatService-dummy-no-index.js"></script>
-    <script src="../../assets/js/script-dummy.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#myTable').DataTable();
-        });
-    </script>
+        <!-- Javascript starts here -->
+        <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+        <script src="../../assets/js/chatService-dummy-no-index.js"></script>
+        <script src="../../assets/js/script-dummy.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#myTable").DataTable();
+            });
+        </script>
 
-    <!-- Javascript ends here -->
-</body>
-
+        <!-- Javascript ends here -->
+    </body>
 </html>
