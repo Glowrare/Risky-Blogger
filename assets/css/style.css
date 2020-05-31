@@ -190,7 +190,7 @@ footer .top-section a:hover {
         visibility: visible;
         display: block !important;
         text-align: left;
-        top: 0;
+        top: 0 !important;
         width: 80%;     
     }
 
@@ -216,8 +216,10 @@ footer .top-section a:hover {
     }
 
     .faac-section {
-        height: 150px;
-        padding-left: 20px;
+        height: auto;
+        padding: 50px 100px !important;
+        width: 100% !important;
+        justify-content: left;
     }
 
     .faac-section .humaaan-image{
@@ -236,7 +238,11 @@ footer .top-section a:hover {
     }
 
     .ratings-section {
-        height: 150px;
+        height: auto;
+        padding: 50px 100px !important;
+        width: 100% !important;
+        background: white;
+        justify-content: left;
     }
 
     .ratings-cover-image {
