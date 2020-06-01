@@ -5,15 +5,11 @@
 .blog-content blockquote {
     font-style: italic;
     border-left: solid black 5px;
-    color: #C51426;
+    color: #c51426;
     padding-left: 15px;
 }
 
-/* .comment-section {
-    background: #F9E4E6;
-} */
-
-/* COPIED SAMPLE FOR COMMENT BOX FROM UIIXSTREAM
+/* FORMAT FOR COMMENT BOX (UIIXSTREAM)
 starts here */
 
 .comments-details button.btn.dropdown-toggle,
@@ -42,7 +38,7 @@ starts here */
     width: 100%;
     float: left;
     height: 100%;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     padding: 10px 10px 10px;
     margin-bottom: 15px;
     border-radius: 5px;
@@ -86,7 +82,7 @@ starts here */
     border-color: #03a9f4;
     border-width: 2px;
 }
-.comments .add-comment button[type=submit] {
+.comments .add-comment button[type="submit"] {
     background-color: #03a9f4;
     color: #fff;
     margin-right: 0px;
@@ -134,23 +130,23 @@ starts here */
 }
 
 /*======Responsive CSS=======*/
-@media (max-width: 767px){
-.comments .commenter-name {
-    font-size: 13px;
-    top: -5px;
-}
-.comments .commenter-pic {
-    width: 40px;
-    height: 40px;
-}
-.comments .commenter-name a{
-  display: block;
-}
-.comments .commenter-name .comment-time{
-  display: block;
-  margin-left: 0px;
-}
+@media (max-width: 767px) {
+    .comments .commenter-name {
+        font-size: 13px;
+        top: -5px;
+    }
+    .comments .commenter-pic {
+        width: 40px;
+        height: 40px;
+    }
+    .comments .commenter-name a {
+        display: block;
+    }
+    .comments .commenter-name .comment-time {
+        display: block;
+        margin-left: 0px;
+    }
 }
 
-/* COPIED SAMPLE FOR COMMENT BOX FROM UIIXSTREAM
+/* FORMAT FOR COMMENT BOX (UIIXSTREAM)
 ends here */

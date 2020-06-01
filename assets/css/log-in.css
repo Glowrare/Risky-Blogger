@@ -1,12 +1,12 @@
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background: #F9E4E6;
+    background: #f9e4e6;
     box-sizing: border-box;
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .header-logo {
@@ -44,13 +44,12 @@ body {
     background-size: cover;
     width: 40%;
     height: inherit;
-
 }
 
 .page-content .form-page {
-    background: #C51426;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #302d2d, #C51426);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #302d2d, #C51426); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #c51426; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #302d2d, #c51426); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #302d2d, #c51426); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 500px;
     height: 350px;
     border-radius: 20px;
@@ -63,13 +62,13 @@ body {
 }
 
 .page-content .form-page form input {
-    border-color: #F9E4E6;
+    border-color: #f9e4e6;
     box-shadow: none;
     color: black;
 }
 
 .page-content .form-page form button {
-    background: #F9E4E6;
+    background: #f9e4e6;
     width: 100%;
     border-radius: 0.25rem;
     border: none;
@@ -86,8 +85,6 @@ body {
 .page-content .form-page form button:hover {
     background: #000000;
     color: white;
-
-
 }
 
 @media screen and (max-width: 640px) {
@@ -97,16 +94,16 @@ body {
         top: 10px;
         justify-content: flex-start;
     }
-    
+
     .logo-image img {
         width: auto;
         height: 20px;
     }
-    
+
     .logo-text h1 {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
-    
+
     .page-content {
         height: 500px;
         width: 90%;
@@ -115,11 +112,11 @@ body {
         left: 25px;
         display: block;
     }
-    
+
     .page-content .amie-and-cali {
-        display: none;    
+        display: none;
     }
-    
+
     .page-content .form-page {
         width: 90vw;
     }
@@ -132,16 +129,16 @@ body {
         top: 20px;
         justify-content: flex-start;
     }
-    
+
     .logo-image img {
         width: auto;
         height: 40px;
     }
-    
+
     .logo-text h1 {
         font-size: 1rem;
     }
-    
+
     .page-content {
         height: 500px;
         width: 100%;
@@ -150,9 +147,9 @@ body {
         left: 25px;
         display: block;
     }
-    
+
     .page-content .amie-and-cali {
-        display: none;    
+        display: none;
     }
 
     .page-content .form-page {

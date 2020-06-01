@@ -22,11 +22,11 @@ body {
     width: 60%;
 }
 
-.share-links img{
+.share-links img {
     max-width: 20px;
 }
 
-.blog-welcome-title h3{
+.blog-welcome-title h3 {
     text-transform: uppercase;
 }
 
@@ -51,11 +51,10 @@ body {
 
 .blog-preview a {
     text-decoration: none;
-
 }
 
 .blog-preview a:hover {
-    color: #C51426;
+    color: #c51426;
 }
 
 .btn {
@@ -64,23 +63,23 @@ body {
     text-transform: uppercase;
     border-radius: 0;
 }
-  
-  .btn-danger {
-    background-color: #C51426 !important;
-  }
+
+.btn-danger {
+    background-color: #c51426 !important;
+}
 
 .btn-danger:hover {
-    background-color: #F9E4E6;
+    background-color: #f9e4e6;
     border-color: rgb(148, 126, 128);
     box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.9);
-} 
+}
 
 p .card-text a:hover {
-    color: #C51426;;
+    color: #c51426;
 }
 
 .position-fixed {
-    right:0;
+    right: 0;
 }
 
 .featured-post {
@@ -95,7 +94,7 @@ p .card-text a:hover {
 }
 
 .featured-post > a {
-    font-size: .8rem;
+    font-size: 0.8rem;
     text-decoration: none;
 }
 
@@ -109,11 +108,11 @@ p .card-text a:hover {
     }
 
     .blog-preview {
-        padding-top: .5rem;
+        padding-top: 0.5rem;
     }
-    
+
     .blog-preview > a > h3 {
-        font-size: 1.0rem;
+        font-size: 1rem;
     }
 
     .blog-preview > a > h5 {
@@ -121,13 +120,12 @@ p .card-text a:hover {
     }
 
     .blog-preview > p {
-        font-size: .3rem;
+        font-size: 0.3rem;
     }
 
     .btn {
         padding: 5px 15px;
     }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -136,23 +134,22 @@ p .card-text a:hover {
     }
 
     .blog-preview {
-        padding-top: .8rem;
+        padding-top: 0.8rem;
     }
-    
+
     .blog-preview > a > h3 {
         font-size: 1.5rem;
     }
 
     .blog-preview > a > h5 {
-        font-size: 1.0rem;
+        font-size: 1rem;
     }
 
     .blog-preview > p {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
     .btn {
         padding: 15px 25px;
     }
-
 }
